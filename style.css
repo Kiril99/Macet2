@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	max-width: 2000px;
 }
 
 .start{
@@ -32,6 +33,7 @@ header nav{
 }
 header nav ul{
 	display: flex;
+	flex-wrap: wrap;
 }
 header nav li{
 	margin: 20px;
@@ -48,10 +50,10 @@ form input{
 	margin-top: 28px;
 }
 .design{
-	margin-top: 200px;
+	margin-top: 180px;
 	display: flex;
 	flex-direction: column;
-	margin-left: 250px;
+	margin-left: 200px;
 	align-items: flex-end;
 }
 .design h1{
@@ -142,17 +144,21 @@ form input{
 }
 .about{
 	display: flex;
-	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-.write{
-	width: 600px;
-	height: 480px;
-	background-image: url(img/write.jpg);
-	background-repeat: no-repeat;
+.write img{
+	height: 100%;
+}
+.here1{
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .here{
 	width: 600px;
-	margin-left: 100px;
+	
 }
 .here p{
 	font-size: 21px;
@@ -245,20 +251,21 @@ form input{
 }
 .about2{
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 }
 .write2{
-	width: 600px;
-	height: 480px;
-	background-image: url(img/time.jpg);
-	background-repeat: no-repeat;
 	order:1;
+}
+.write2 img{
+	height: 100%;
+	margin: 0 auto;
+	width: 100%;
 }
 .here2{
 	order: -1;
 	width: 600px;
 	margin: 0 auto;
+	
 }
 .here2 p{
 	font-size: 21px;
